@@ -1,9 +1,16 @@
 {
-  "name": "quoteapi",
-  "version": "0.0.0",
-  "private": true,
+  "name": "mea2n",
+  "version": "0.0.1",
+  "private": false,
+
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "cd public && npm run tsc && cd .. && node ./bin/www",
+    "debug": "cd public && npm run tsc && cd .. && node-debug ./bin/www",
+    "tsc": "cd public && npm run tsc",
+    "tsc:w": "cd public && npm run tsc:w",
+    "express": "node ./bin/www",
+    "express-debug": "node-debug ./bin/www",
+    "postinstall": "cd public && npm install"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
