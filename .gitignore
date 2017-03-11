@@ -2,6 +2,9 @@
 logs
 *.log
 npm-debug.log*
+puplic/app/*.js*
+simpleCount.js
+config.js
 
 # Runtime data
 pids
