@@ -4,7 +4,7 @@
   "private": false,
 
   "scripts": {
-    "start": "cd public && npm run tsc && cd .. && node ./bin/www",
+    "start": "node ./bin/www",
     "debug": "cd public && npm run tsc && cd .. && node-debug ./bin/www",
     "tsc": "cd public && npm run tsc",
     "tsc:w": "cd public && npm run tsc:w",
@@ -16,10 +16,15 @@
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
+    "ee-first": "^1.1.1",
     "ejs": "~2.5.5",
     "express": "~4.14.1",
+    "external-ip": "^0.2.4",
+    "methods": "^1.1.2",
     "mongodb": "^2.2.24",
+    "request": "^2.74.0",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "tsc": "^1.20150623.0"
   }
 }
