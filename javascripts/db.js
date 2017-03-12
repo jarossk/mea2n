@@ -1,4 +1,4 @@
-var MongoClient = require(mongodb).MongoClient;
+var MongoClient = require('mongodb').MongoClient;
 
 function DB() {
   this.db = null;
@@ -68,7 +68,7 @@ DB.prototype.sampleCollection = function(coll, numberDocs) {
             console.log("Error reading from cursor: " + error.message);
             reject(error.message);
           } else { 
-            reslove(docArray);
+            resolve(docArray);
           }
         });
       }
